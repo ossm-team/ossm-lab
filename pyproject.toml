@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ossm-lab"
+version = "0.0.1"
+description = "Analysis Lab for sensorimotor modeling."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [{ name = "OSSM Team" }]
+dependencies = [
+  "numpy>=1.26",
+  "pydantic>=2",
+  "matplotlib>=3.7",
+  "joblib>=1.3",
+  "xarray>=2024.2.0",
+]
+
+[project.optional-dependencies]
+torch = ["torch>=2.2"]
+jax = ["jax>=0.4.21", "jaxlib>=0.4.21"]
+viz = ["plotly>=5.19", "panel>=1.4"]
+stats = ["statsmodels>=0.14", "pymc>=5.10"]
+dev = ["pytest>=8.4.1"]
+
+# Third‑party plugins will register into this group from their own pyproject
+[project.entry-points."ossm_lab.protocols"]
+
+# built‑ins as plugins for symmetry
+representation.rsa = "ossm_lab.protocols.rsa:registry_entry"
