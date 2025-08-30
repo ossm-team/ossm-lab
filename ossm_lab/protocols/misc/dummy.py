@@ -1,26 +1,20 @@
-from typing import Any, Optional, Dict
-
 from ...core.result import BaseResult
 from ...core.decorators import register_protocol
 from ...core.protocol import Protocol
 from ...core.result import Result
 
-import rsatoolbox as rsa
-
 
 @register_protocol(
-    name="representation.rsa",
+    name="misc.dummy",
     version="0.1.0",
-    family="representation",
+    family="misc",
     authors="OSSM Team",
-    aliases=["rsa"],
+    aliases=["dummy", "test"],
 )
-class RSA(Protocol):
-    """ Implementation of Representational Similarity Analysis (RSA) as a protocol, using the rsatoolbox library. """
+class Dummy(Protocol):
+    """ Dummy implementation of a protocol. """
 
     def run(self, model) -> BaseResult:
-        raise NotImplementedError
-
         analysis_result = {}
 
         return Result(

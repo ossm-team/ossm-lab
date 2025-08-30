@@ -1,4 +1,4 @@
-from ossm_lab.core.base import Protocol
+from ossm_lab.core.protocol import Protocol
 from ossm_lab.core.registry import list_protocols, get
 from ossm_lab.core.decorators import register_protocol
 

@@ -1,5 +1,5 @@
 from . import protocols
-from .core.registry import registry, load_entry_points
+from .core.registry import registry, load_entry_points, get, list_protocols
 
 # Load third‑party plugins once; ignore failures gracefully.
 try:
