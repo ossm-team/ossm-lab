@@ -1,8 +1,6 @@
 # OSSM Lab
 
-`ossm-lab` provides the **analysis lab** of the OSSM ecosystem.  
-It implements standardized pipelines and methods to evaluate models on tasks, ensuring results are comparable and reproducible.  
-It is one of the core packages of the [OSSM ecosystem](https://github.com/ossm-team), supported by the [NWO Open Science Fund](https://www.nwo.nl/en/researchprogrammes/open-science/open-science-fund).
+`ossm-lab` provides the **analysis lab** of the OSSM ecosystem. It implements standardized pipelines and methods to evaluate models on tasks, ensuring results are comparable and reproducible. It is one of the core packages of the [OSSM ecosystem](https://github.com/ossm-team), supported by the [NWO Open Science Fund](https://www.nwo.nl/en/researchprogrammes/open-science/open-science-fund).
 
 ## Vision
 
